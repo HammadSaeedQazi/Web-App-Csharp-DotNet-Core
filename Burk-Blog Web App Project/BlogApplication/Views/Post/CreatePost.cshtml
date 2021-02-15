@@ -1,0 +1,24 @@
+﻿@model BlogApplication.Models.Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 class="heading-style text-center bg-success">CREATE POST</h3>
+
+<div class="profile-style">
+    <form method="post" asp-action="CreatePost">
+        <div asp-validation-summary="ModelOnly"></div>
+
+        <div class="form-group">
+            <label asp-for="Title">Title*</label><br />
+            <input type="text" class="form-control" asp-for="Title" placeholder="Title" autocomplete="off">
+            <span asp-validation-for="Title"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Content">Content*</label><br />
+            <textarea type="text" class="form-control" asp-for="Content" placeholder="Content" style="height:250px"></textarea>
+            <span asp-validation-for="Content"></span>
+        </div>
+        <button type="submit" class="btn btn-success" style="width:100px">Post</button>
+    </form>
+</div>

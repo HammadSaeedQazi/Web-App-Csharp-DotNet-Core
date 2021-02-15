@@ -1,0 +1,28 @@
+﻿@model List<BlogApplication.Models.Post>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="mypost-view" style="margin-top:4.5rem">
+    <div>
+        <a class="btn btn-primary" asp-controller="Post" asp-action="CreatePost">Create Post</a><br /><br />
+    </div>
+
+    @foreach (BlogApplication.Models.Post p in Model)
+    {
+        <div style="background-color:white; border-radius:10px; padding:15px;">
+            <img style="float:left;" class="rounded-circle" width="100" height="100" src="@Url.Content(p.usrPP)" />
+            <div style="margin-left: 140px;">
+                <a style="text-decoration:none; color:black;" asp-controller="General" asp-action="About" asp-route-id="@p.Id">
+                    <h6 style="display:inline;">@p.Usr</h6>
+                </a>
+                <p style="display:inline; margin-left:20px">@p.Date</p><hr style="height:1px; color:grey; background-color:grey" />
+                <div>
+                    <div><a style="text-decoration:none; color:black;" asp-controller="Post" asp-action="ViewPost" asp-route-id="@p.Id"><h3>@p.Title</h3></a></div>
+                    <div><p>@p.Content</p></div>
+                </div>
+            </div>
+        </div>
+        <br />
+    }
+</div>

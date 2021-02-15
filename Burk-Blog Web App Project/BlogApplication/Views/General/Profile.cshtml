@@ -1,0 +1,57 @@
+﻿@model BlogApplication.Models.RegularUser
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="profile-style" style="margin-top:5.7rem">
+    <form method="post" asp-action="Profile" enctype="multipart/form-data">
+        <div>
+            <img class="rounded-circle" width="100" height="100" src="@Url.Content(Model.picAddress)" style="display:inline" />
+            <h3 style="display:inline; margin-left:40px;">@Model.Username</h3><br /><br />
+        </div>
+        <div>
+            <h4>Profile</h4><hr style="height:1px; color:grey; background-color:grey" /><br />
+        </div>
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="form-group">
+            <label asp-for="Username" class="col-form-label">Username*</label>
+            <div>
+                <input type="text" asp-for="Username" class="form-control" autocomplete="off">
+                <p style="font-size:x-small">Required. 50 characters or fewer. Only letters, digits, ampersend, underscore signs and dot are allowed.</p>
+                <span asp-validation-for="Username"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="col-form-label">Email*</label>
+            <div>
+                <input type="email" class="form-control" asp-for="Email" autocomplete="off">
+                <span asp-validation-for="Email"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-form-label">Upload Profile Picture*</label>
+            <div>
+                <input type="file" asp-for="profilePicture" accept="image/*" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="col-form-label">Old Password*</label>
+            <div>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Old Password">
+                <span asp-validation-for="Password"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="anotherPassword" class="col-form-label">New Password*</label>
+            <div>
+                <input asp-for="anotherPassword" type="password" class="form-control" placeholder="New Password">
+                <span asp-validation-for="anotherPassword"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+        </div>
+    </form>
+</div>

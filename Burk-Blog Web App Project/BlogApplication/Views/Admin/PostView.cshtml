@@ -1,0 +1,20 @@
+﻿@model BlogApplication.Models.Post
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="mypost-view" style="background-color:white; padding:15px; border-radius:5px; margin-top:4.5rem">
+    <img style="float:left; margin-right:45px" class="rounded-circle" width="70" height="70" src="@Url.Content(Model.usrPP)" />
+    <div style="margin-left:100px">
+        <h6 style="display:inline;">@Model.Usr</h6>
+        <p style="display:inline; margin-left:20px">@Model.Date</p>
+        <div style="margin-top:10px">
+            <a class="btn btn-secondary" style="font-size:small;" asp-action="UpdatePost" asp-route-id="@Model.Id">Update</a>
+            <a style="margin-left:5px; font-size:small;" class="btn btn-danger" asp-action="DeletePost" asp-route-id="@Model.Id">Delete</a>
+        </div><hr style="height:1px; color:grey; background-color:grey" />
+        <div>
+            <div><h3>@Model.Title</h3></div>
+            <div><p>@Model.Content</p></div>
+        </div>
+    </div>
+</div>

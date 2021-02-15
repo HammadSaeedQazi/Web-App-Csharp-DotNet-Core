@@ -1,0 +1,30 @@
+﻿@model List<BlogApplication.Models.RegularUser>
+@{ 
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+    <h3 class="text-center bg-info heading-style">ADMIN PANEL</h3>
+    <div style="margin-left:20%; margin-right:20%; background-color:white; padding:15px; border-radius:10px;">
+        <a class="btn btn-dark" style="margin-bottom:20px" asp-controller="Admin" asp-action="AddUser">Add User</a>
+        <a class="btn btn-danger" style="margin-bottom:20px; margin-left:20px" asp-controller="Admin" asp-action="ManagePosts">Manage Posts</a>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (BlogApplication.Models.RegularUser usr in Model)
+                {
+                    <tr>
+                        <td>@usr.Username</td>
+                        <td>
+                            <a class="btn btn-info" asp-controller="Admin" asp-action="UpdateUser" asp-route-id="@usr.Id">Update</a>
+                            <a class="btn btn-warning" style="margin-left:10px" asp-controller="Admin" asp-action="RemoveUser" asp-route-id="@usr.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

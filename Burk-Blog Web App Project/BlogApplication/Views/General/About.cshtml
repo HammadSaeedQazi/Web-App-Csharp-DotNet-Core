@@ -1,0 +1,15 @@
+﻿@model BlogApplication.Models.RegularUser
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 class="text-center bg-danger heading-style">ABOUT</h3>
+<div class="text-center form-style" style="background-color:white">
+    <center><img class="rounded-circle" src="@Url.Content(Model.picAddress)" width="130" height="130" style="margin-bottom:40px" /></center>
+    <p class="about-info"><b>Username:</b> @Model.Username</p>
+    <p class="about-info"><b>Email:</b> @Model.Email</p>
+    <p class="about-info"><b>DOB:</b> July 27, 2001</p>
+    <p class="about-info"><b>City:</b> Barcelona</p>
+    <p class="about-info"><b>Country:</b> Spain</p>
+    <p class="about-info"><b>Hobbies:</b> Cricekt, Badminton, Ludo</p>
+</div>

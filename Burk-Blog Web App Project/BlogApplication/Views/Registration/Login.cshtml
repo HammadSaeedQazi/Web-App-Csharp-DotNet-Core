@@ -1,0 +1,27 @@
+﻿@using BlogApplication.Models
+@model RegularUser
+@{
+    Layout = "~/Views/Shared/RegistrationLayout.cshtml";
+}
+
+<h3 class="text-center bg-primary heading-style">LOGIN</h3>
+<center>
+    <div class="form-style" style="background-color:greenyellow">
+        <center><img class="rounded-circle" src="~/images/LoginPic.png" width="130" height="130" style="margin-bottom:40px" /></center>
+        <form method="post" asp-action="Login">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <input type="text" class="form-control input-style" asp-for="Username" placeholder="Username" autocomplete="off">
+                <span asp-validation-for="Username"></span>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control input-style" asp-for="Password" placeholder="Password" autocomplete="off">
+                <span asp-validation-for="Password"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100px">Log In</button>
+            <div class="m-3">
+                Don't have an account? <a asp-action="Signup">Create One</a>
+            </div>
+        </form>
+    </div>
+</center>
