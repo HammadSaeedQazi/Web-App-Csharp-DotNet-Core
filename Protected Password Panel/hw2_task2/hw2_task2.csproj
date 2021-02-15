@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="background.jpg" />
+    <None Remove="eye.png" />
+    <None Remove="real_background.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="real_background.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,68 @@
+﻿<Window x:Class="hw2_task1.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hw2_task1"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="800">
+    <DockPanel>
+        <Label Content="---REGISTRATION PANEL---" Background="#FFC3CCDA" DockPanel.Dock="Top" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Bernard MT Condensed" Foreground="#FF080000">
+        </Label>
+        <Label DockPanel.Dock="Bottom" HorizontalContentAlignment="Center" Content="Task-3 HomwWork-2" Background="#FFC3CCDA" Foreground="#FF0A0A0A" HorizontalAlignment="Stretch" FontWeight="Bold"></Label>
+        <Label DockPanel.Dock="Left" Content="     " Background="#FFC3CCDA"></Label>
+        <Label DockPanel.Dock="Right" Content="     " Background="#FFC3CCDA"></Label>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" ShowGridLines="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="100" MaxWidth="200"></ColumnDefinition>
+                <ColumnDefinition MinWidth="200" MaxWidth="400"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="First Name:" Grid.Row="0" Grid.Column="0" Margin="0,0,0,10" FontSize="18"></TextBlock>
+            <TextBlock Text="Last Name:" Grid.Row="1" Grid.Column="0" Margin="0,0,0,10" FontSize="18"></TextBlock>
+            <TextBlock Text="Email:" Grid.Row="2" Grid.Column="0" Margin="0,0,0,10" FontSize="18"></TextBlock>
+            <TextBlock Text="Password:" Grid.Row="3" Grid.Column="0" Margin="0,0,0,10" FontSize="16"></TextBlock>
+            <TextBlock Text="Confirm Password:" Grid.Row="4" Grid.Column="0" FontSize="18" Margin="0,0,10,0"></TextBlock>
+            <TextBox Name="fname" Grid.Row="0" Grid.Column="1" Margin="0,0,0,10" FontSize="18"></TextBox>
+            <TextBox Name="lname" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" FontSize="18"></TextBox>
+            <TextBox Name="email" Grid.Row="2" Grid.Column="1" Margin="0,0,0,10" FontSize="18"></TextBox>
+            <TextBox Name="password" Grid.Row="3" Grid.Column="1" Margin="0,0,0,10" FontSize="18"></TextBox>
+            <TextBox Name="cnfrmpasswd" Grid.Row="4" Grid.Column="1" FontSize="18" Margin="0,0,0,10"></TextBox>
+            <WrapPanel Grid.Row="6" Grid.Column="1">
+                <Button Name="submit" Content="Submit" Width="80" Click="submit_Click" FontSize="18" Margin="0,10,0,0"></Button>
+                <Button Name="cancel" Content="Cancel" Width="80" Margin="10,10,0,0" Click="cancel_Click" FontSize="18"></Button>
+            </WrapPanel>
+        </Grid>
+        
+        
+        <!--<StackPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <TextBlock Text="First Name:"></TextBlock>
+                <TextBox Name="fname" Width="200"></TextBox>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <TextBlock Text="Last Name:"></TextBlock>
+                <TextBox Name="lname" Width="200"></TextBox>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <TextBlock Text="Email:"></TextBlock>
+                <TextBox Name="email" Width="200"></TextBox>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <TextBlock Text="Password:"></TextBlock>
+                <TextBox Name="password" Width="200"></TextBox>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <TextBlock Text="Confirm Password:"></TextBlock>
+                <TextBox Name="cnfrmPassqord" Width="200"></TextBox>
+            </WrapPanel>
+        </StackPanel>-->
+    </DockPanel>
+</Window>

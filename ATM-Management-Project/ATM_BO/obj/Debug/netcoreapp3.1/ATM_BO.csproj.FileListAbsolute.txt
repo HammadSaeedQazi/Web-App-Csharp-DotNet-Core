@@ -1,9 +1,0 @@
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\bin\Debug\netcoreapp3.1\ATM_BO.deps.json
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\bin\Debug\netcoreapp3.1\ATM_BO.dll
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\bin\Debug\netcoreapp3.1\ATM_BO.pdb
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\obj\Debug\netcoreapp3.1\ATM_BO.csprojAssemblyReference.cache
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\obj\Debug\netcoreapp3.1\ATM_BO.AssemblyInfoInputs.cache
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\obj\Debug\netcoreapp3.1\ATM_BO.AssemblyInfo.cs
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\obj\Debug\netcoreapp3.1\ATM_BO.csproj.CoreCompileInputs.cache
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\obj\Debug\netcoreapp3.1\ATM_BO.dll
-C:\Users\konne\source\repos\Assignment_1\ATM_BO\obj\Debug\netcoreapp3.1\ATM_BO.pdb
