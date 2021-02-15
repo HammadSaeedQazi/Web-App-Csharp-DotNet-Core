@@ -1,0 +1,16 @@
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\obj\Debug\netcoreapp3.1\ATM_VIEW.csprojAssemblyReference.cache
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\obj\Debug\netcoreapp3.1\ATM_VIEW.AssemblyInfoInputs.cache
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\obj\Debug\netcoreapp3.1\ATM_VIEW.AssemblyInfo.cs
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\obj\Debug\netcoreapp3.1\ATM_VIEW.csproj.CoreCompileInputs.cache
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_VIEW.deps.json
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_VIEW.dll
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_VIEW.pdb
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_BLL.dll
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_BO.dll
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_DAL.dll
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_BLL.pdb
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_BO.pdb
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\bin\Debug\netcoreapp3.1\ATM_DAL.pdb
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\obj\Debug\netcoreapp3.1\ATM_VIEW.csproj.CopyComplete
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\obj\Debug\netcoreapp3.1\ATM_VIEW.dll
+C:\Users\konne\source\repos\Assignment_1\ATM_VIEW\obj\Debug\netcoreapp3.1\ATM_VIEW.pdb
